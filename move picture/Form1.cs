@@ -16,5 +16,10 @@ namespace move_picture
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.location.X + 5, pictureBox1.location.Y);
+        }
     }
 }
