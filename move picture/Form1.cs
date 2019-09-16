@@ -26,8 +26,12 @@ namespace move_picture
         }
 
         private void Button2_Click(object sender, EventArgs e)
+
         {
+            if (pictureBox2.Location.X + 5 < ClientRectangle.Width)
+            { 
             pictureBox2.Location = new Point(pictureBox1.Location.X + 5, pictureBox2.Location.Y);
+            }
         }
 
         private void Button3_Click(object sender, EventArgs e)
